@@ -8,7 +8,7 @@ var wins = 0;
 var loses = 0;
 
 function randomNumber(){
-	computerChoice = Math.floor(Math.random()*100) + 50;
+	computerChoice = Math.floor(Math.random()*100) + 20;
 	
 }
 function resetCheck(){
@@ -45,7 +45,7 @@ $(document).ready(function(){
 	$("#button-1").on("click", function() {
             if (scoreNumber< computerChoice) {
             	if (crystal1 === 0) {
-					crystal1 = Math.floor(Math.random()*20)+5;
+					crystal1 = Math.floor(Math.random()*12);
             		console.log(crystal1);
             		scoreNumber = scoreNumber + crystal1;
             		$('#counter').text(scoreNumber);
@@ -62,7 +62,7 @@ $(document).ready(function(){
     $("#button-2").on("click", function() {
     	if (scoreNumber< computerChoice) {
             	if (crystal2 === 0) {
-            		crystal2 = Math.floor(Math.random()*20)+5;
+            		crystal2 = Math.floor(Math.random()*12);
             		console.log(crystal2);
             		scoreNumber = scoreNumber + crystal2;
             		$('#counter').text(scoreNumber);
