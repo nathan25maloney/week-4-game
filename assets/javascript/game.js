@@ -80,7 +80,7 @@ $(document).ready(function(){
     $("#button-3").on("click", function() {
     	if (scoreNumber< computerChoice) {
             	if (crystal3 === 0) {
-            		crystal3 = Math.floor(Math.random()*20)+5;
+            		crystal3 = Math.floor(Math.random()*12);
             		console.log(crystal3);
             		scoreNumber = scoreNumber + crystal3;
             		$('#counter').text(scoreNumber);
@@ -98,7 +98,7 @@ $(document).ready(function(){
     $("#button-4").on("click", function() {
     	if (scoreNumber< computerChoice) {
             	if (crystal4 === 0) {
-            		crystal4 = Math.floor(Math.random()*20)+5;
+            		crystal4 = Math.floor(Math.random()*12);
             		console.log(crystal4);
             		scoreNumber = scoreNumber + crystal4;
             		$('#counter').text(scoreNumber);
